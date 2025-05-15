@@ -23,7 +23,14 @@ class Song:
 
     @classmethod
     def add_to_artists(cls):
-        cls.artists = list(set(cls.artists))       
+        cls.artists = list(set(cls.artists))   
+
+    @classmethod
+    def add_to_genres_count(cls, genre):
+        if genre in cls.genre_count:
+            cls.genre_count[genre] += 1
+        else:
+            cls.genre_count[genre] = 1            
          
 
     
