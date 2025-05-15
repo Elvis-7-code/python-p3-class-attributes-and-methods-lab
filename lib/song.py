@@ -4,7 +4,7 @@ class Song:
         self.artist = artist
         self.genre = genre
 
-        Song.add_song_tocount()
+        Song.add_song_to_count()
         Song.genres.append(genre)
         Song.artist.append(artist)
 
