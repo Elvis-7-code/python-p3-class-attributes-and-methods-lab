@@ -19,9 +19,11 @@ class Song:
 
     @classmethod
     def add_to_genres(cls): 
-        cls.genres = list(set(cls.artists))
+        cls.genres = list(set(cls.genres))
 
-    @class       
+    @classmethod
+    def add_to_artists(cls):
+        cls.artists = list(set(cls.artists))       
          
 
     
