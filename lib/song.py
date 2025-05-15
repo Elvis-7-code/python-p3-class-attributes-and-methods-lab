@@ -14,11 +14,14 @@ class Song:
         Song.add_to_artist_count(artist)
 
     @classmethod
-    def add_song_to_count(cls)
+    def add_song_to_count(cls):
         cls.count += 1
 
-    # @classmethod
-    # def add_to_genres    
+    @classmethod
+    def add_to_genres(cls): 
+        cls.genres = list(set(cls.artists))
+
+    @class       
          
 
     
